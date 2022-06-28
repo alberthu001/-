@@ -20,9 +20,7 @@ contract LuckyNumber {
 
 首先，我们定义 LuckyNumber 合约的 interface ：：
 
-1
-2
-3
+
 contract NumberInterface {
   function getNum(address _myAddress) public view returns (uint);
 }
@@ -43,18 +41,6 @@ contract NumberInterface {
 }
 我们可以在合约中这样使用：
 
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
 contract MyContract {
   address NumberInterfaceAddress = 0xab38...;
   // ^ 这是FavoriteNumber合约在以太坊上的地址
